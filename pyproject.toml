@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "finStar"
+version = "0.0.1"
+authors = [
+    {name = "Mariia Stepanova"}
+]
+description = "Test project"
+readme = "README.md"
+requires-python = ">=3.9.13"
+dependencies = ["pytest", "xmlschema~=2.3.1", "requests~=2.31.0", "pytest-resource-path"]
+
+[tool.pytest.ini_options]
+minversion = "7.4.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
